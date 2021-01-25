@@ -1,0 +1,27 @@
+.listItem { 
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    align-items: center;
+    border: 1px solid #efeded;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-right: 0;
+    max-height: 75px;
+    .iconBox{ 
+        width: 20%;
+        .icon{ 
+            max-width: 90px;
+        }
+    }
+    .nameAndNumber{ 
+        width: 50%;
+        .nameText{ 
+            margin-left: 0.5rem;
+        }
+    }
+    .typesBox{ 
+        display: flex;
+    }
+
+}

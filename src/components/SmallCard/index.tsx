@@ -1,28 +1,30 @@
 import React from 'react';
-import './style.scss';
+import style from './style.module.scss';
 
 export interface ISmallCardProps { 
-    title: string; 
+    title: string;
+    index: number;
     onClick?: () => void;
 }
 
-export const SmallCard = ({title, onClick}: ISmallCardProps) => { 
+export const SmallCard = ({title, onClick, index}: ISmallCardProps) => { 
 
     const cardColors = [ 
-        '#b5e486',
-        '#000000',
-        '#c3cdf7', 
-        '#d0cfcf', 
-        '#ff5555', 
-        '#e6e65e',
-        '#b76b4a'
+        '#A8A878',
+        '#F08030',
+        '#6890F0', 
+        '#78C850', 
+        '#F8D030', 
+        '#F85888',
+        '#98D8D8',
+        '#B8B8D0'
     ]
 
     return ( 
         <div style={{
-            backgroundColor: cardColors[Math.floor(Math.random() * 6)]
-        }} className={'card'} onClick={onClick ?? undefined}>
-            <label className={'cardLabel'}>
+            backgroundColor: cardColors[index]
+        }} className={style.card} onClick={onClick ?? undefined}>
+            <label className={style.cardLabel}>
                 {title}
             </label>
         </div> 

@@ -1,6 +1,6 @@
 .card {
     border: 1px solid black;
-    padding: 2rem 1rem;
+    padding: 1rem;
     border-radius: 8px;
     min-width: 200px;
     display: flex;
@@ -12,8 +12,11 @@
     background-color: #020202;
     background-repeat: no-repeat;
     color: white;
+    cursor: pointer;
     .cardLabel { 
-        font-size: 16px;
+        font-size: 12px;
         font-weight: bold;
+        max-width: 142px;
+        line-height: 19px;
     }
 }

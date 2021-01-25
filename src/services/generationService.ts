@@ -1,4 +1,3 @@
-import React from 'react'; 
 import { baseURL } from './api';
 
 export const fetchGenerations = async () => { 

@@ -1,6 +1,6 @@
 import { Generation } from '../../models/generation';
 import React, { useEffect, useState } from 'react';
-import './style.scss';
+import style from './style.module.scss';
 import { fetchGenerations } from '../../services/generationService';
 import { SmallCard } from '../../components/SmallCard';
 import { generationNameFormatter } from '../../utils/formatters';
@@ -43,15 +43,14 @@ export const Home = () => {
 
     return (
         <>
-        <main className={'mainContainer'}>
-            <section className={'textSection'}>
-                <h1 className={animateText ? 'fade-in-animation' : undefined}>Lorem ipsum </h1>
-                <h2 className={animateText ? 'fade-in-animation-with-delay' : undefined}>dolor sit amet</h2>
-                <h2 className={animateText ? 'fade-in-animation-with-delay' : undefined}>consectetur adipiscing elit,</h2>
+        <main className={style.mainContainer}>
+            <section className={style.textSection}>
+                <h1 className={animateText ? 'fade-in-animation' : undefined}>Welcome to PokeApp! </h1>
+                <h2 className={animateText ? 'fade-in-animation-with-delay' : undefined}>Select one of the pokemon universe generation below to know more about them!</h2>
             </section>
-            <section className={'genCardsSection'}>
+            <section className={style.genCardsSection}>
                 {genList.map((gen, index) => (
-                    <SmallCard onClick={() => handleClick(index+1)} key={gen.name} title={generationNameFormatter(gen.name)} />
+                    <SmallCard index={index} onClick={() => handleClick(index+1)} key={gen.name} title={generationNameFormatter(gen.name)} />
                 ))}
             </section>
         </main>

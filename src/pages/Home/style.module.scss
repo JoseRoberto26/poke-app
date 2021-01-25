@@ -1,14 +1,33 @@
 .mainContainer { 
-    max-width: 1000px;
-    margin: 16rem auto;
+    margin: 28% auto;
+    margin-bottom: 0;
     display: flex;
     justify-content: start;
     flex-direction: column;
-    background: white;
     border-radius: 6px;
-    padding: 0 2rem;
-    max-height: 684px;
     padding-bottom: 2rem;
+    padding: 2rem 10rem;
+    height: 100%;
+    overflow: scroll;
+
+    @media screen and (max-width: 1170px){
+        .section { 
+            width: 700px;
+            margin: auto;
+        }
+    }
+    @media screen and (max-width: 800px){ 
+        padding: 1rem 4rem;
+
+        .textSection{ 
+            h1 { 
+                font-size: 32px !important;
+            }
+        }
+    }
+    @media screen and (max-width: 430px){
+        padding: 1rem 2rem;
+    }
     
     section {
         width: 100%;
@@ -20,10 +39,10 @@
     }
     .textSection { 
         h1 { 
-            font-size: 72px;
+            font-size: 49px;
         }
         h2 { 
-            font-size: 46px;
+            font-size: 20px;
         }
         h1, h2 {
             margin: 1.75rem;
@@ -34,7 +53,7 @@
         flex-direction: row;
         flex-wrap: wrap;
 
-        .card{ 
+        div{ 
             flex: 1 0 21%;
             box-sizing: border-box;
             cursor: pointer;

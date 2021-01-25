@@ -1,11 +1,15 @@
 body {
-  margin: 0;
-  height: 100vh;
-  background: url("./assets/background-2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  margin: 0;  
 }
 #root { 
   height: 100%;
+}
+
+h1, h2, label { 
+  font-family: 'PokemonGB';
+}
+
+@font-face {
+  font-family: 'PokemonGB';
+  src: local('Pokemon GB'), url('./assets/fonts/Pokemon GB.ttf') format('truetype');
 }
