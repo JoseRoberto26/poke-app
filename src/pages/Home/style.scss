@@ -1,0 +1,61 @@
+.mainContainer { 
+    max-width: 1000px;
+    margin: 16rem auto;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    background: white;
+    border-radius: 6px;
+    padding: 0 2rem;
+    max-height: 684px;
+    padding-bottom: 2rem;
+    
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .textSection { 
+        h1 { 
+            font-size: 72px;
+        }
+        h2 { 
+            font-size: 46px;
+        }
+        h1, h2 {
+            margin: 1.75rem;
+        }
+    }
+    .genCardsSection { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .card{ 
+            flex: 1 0 21%;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    }
+}
+
+.fade-in-animation { 
+    animation: fade 1.2s ease-in;
+}
+.fade-in-animation-with-delay { 
+    animation: fade 1.2s ease-in;
+    animation-delay: 1.4s;
+    opacity: 1;
+}
+
+@keyframes fade { 
+    0% { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+}
