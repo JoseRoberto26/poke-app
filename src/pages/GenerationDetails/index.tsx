@@ -44,10 +44,7 @@ export const GenerationDetails = () => {
     }
 
     return ( 
-
-        
         <div className={style.mainContainer}>
-            {location.pathname !== '/' && (<BackButton/>)}
 
              {loading && ( 
                 <Loading />

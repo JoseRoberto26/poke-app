@@ -1,13 +1,15 @@
 .mainContainer { 
-    margin: 10% auto;
-    margin-bottom: 0;
+    max-width: 1000px;
+    margin: 12rem auto;
     display: flex;
     justify-content: start;
     flex-direction: column;
     border-radius: 6px;
+    padding: 0 8rem;
     padding-bottom: 2rem;
-    padding: 2rem 15rem;
-    height: 100%;
+    overflow-y: auto;
+    margin-bottom: 0;
+    height: 570px;
 
     @media screen and (max-width: 1170px){
         .section { 
@@ -17,7 +19,6 @@
     }
     @media screen and (max-width: 800px){ 
         padding: 1rem 4rem;
-        margin: 19% auto;
         margin-bottom: 0;
         .textSection{ 
             h1 { 
@@ -25,8 +26,10 @@
             }
         }
     }
-    @media screen and (max-width: 430px){
+    @media screen and (max-width: 475px){
         padding: 1rem 2rem;
+        margin: 6rem auto;
+        height: 471px;
     }
     
     section {
