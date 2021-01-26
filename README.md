@@ -42,7 +42,7 @@ First, you need to use either Yarn to install the project's dependencies
 <!-- DEMO -->
 ## Demo
 
-You can check a live version of the website at: 
+You can check a live version of the website at: [PokeApp](https://poke-gen-app.netlify.app/)
 
 <!-- CONTRIBUTING -->
 ## Contributing
