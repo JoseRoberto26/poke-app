@@ -35,7 +35,7 @@ export const PokemonListItem = ({item, className, onClick}: IPokemonListItem) =>
             </div>
             <div className={style.typesBox}>
                 {pokemon?.types.map((type) => ( 
-                    <TypeTag type={capitalize(type.type.name)}/>
+                    <TypeTag key={type.type.name} type={capitalize(type.type.name)}/>
                 ))}
             </div>
         </div>
