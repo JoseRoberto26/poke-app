@@ -3,9 +3,12 @@
 A React application built with create-react-app to display Pokeapi info about the Pokemon universe generations info.
 
 ## About The Project
-![screenshot-1](https://i.imgur.com/EFQiH0t.png)
-![screenshot-2](https://i.imgur.com/9sneZCL.png)
-![screenshot-3](https://i.imgur.com/RECw6ay.png)
+   <p align="center">
+   <img src="https://i.imgur.com/EFQiH0t.png" width="280">
+   <img src="https://i.imgur.com/9sneZCL.png" width="280">
+   <img src="https://i.imgur.com/RECw6ay.png" width="280px">
+  </p>
+
 
 This React application consists on a Home screen that gives the user the option choose his favorite Pokemon universe generation to check some information available through the PokeApi.
 After selecting one of the generations, the app redirects to a new page with information about the selected generation, including a list of every pokemon available in that generation. The user can also select a Pokemon to check more information about them, such as his height, weight and base stats value. 
