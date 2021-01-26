@@ -17,7 +17,6 @@ export const PokemonListItem = ({item, className, onClick}: IPokemonListItem) =>
 
     const getPokemonInfo = async (name: string) => { 
         const data = await fetchPokemonInfo(name);
-        console.log(data)
         setPokemon(data);
     }
 

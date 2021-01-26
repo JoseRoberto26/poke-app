@@ -31,7 +31,6 @@ export const GenerationDetails = () => {
         data.pokemon_species = data.pokemon_species.sort((a: any,b: any) => {
             return a.url.split('/')[6] - b.url.split('/')[6];
         });
-        console.log(data)
         setGenerationInfo(data);
         setLoading(false);
     }

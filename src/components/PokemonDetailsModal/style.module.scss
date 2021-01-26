@@ -42,6 +42,7 @@
         border: 2px solid black;
         display: flex;
         align-items: center;
+        cursor: pointer;
         label{ 
             text-shadow: 2px 2px #000000;
             color: white;
@@ -155,6 +156,3 @@
         }
     }
 }
-
-
-// @media screen and (max-width: )
