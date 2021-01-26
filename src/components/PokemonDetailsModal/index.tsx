@@ -15,7 +15,7 @@ export interface IPokemonModalProps {
 	const customStyles = {
 		content : {
 		  backgroundColor: '#f3f3f3', 
-		  maxHeight: '571px',
+		  maxHeight: '686px',
 		  marginRight: '9%',
 		  marginLeft: '8%',
 		  minWidth: '320px',
@@ -60,6 +60,14 @@ export const PokemonModal = ({pokemon, closeModal, showModal}: IPokemonModalProp
 						<div className={style.infos}>
 							<AboutInfoCard info={pokemon.height.toString()} label='Height' />
 							<AboutInfoCard info={pokemon.weight.toString()} label='Weight' />
+						</div>
+					</div>
+					<div className={style.bottomStatBox}>
+						<div className={style.redLine}/>
+						<div className={style.infos}>
+							{pokemon.stats.map((stat) => (
+								<AboutInfoCard info={stat.base_stat.toString()} label={capitalize(stat.stat.name)} />
+							))}
 						</div>
 					</div>
 				</div>

@@ -1,5 +1,6 @@
 import { PokemonType, TypeWithSlot } from "./pokemonType";
 import { Sprites } from "./sprites";
+import { Stat } from "./stat";
 
 export interface Pokemon { 
     id: number;
@@ -11,4 +12,5 @@ export interface Pokemon {
     height: number;
     weight: number;
     base_experience: number;
+    stats: Stat[];
 }
