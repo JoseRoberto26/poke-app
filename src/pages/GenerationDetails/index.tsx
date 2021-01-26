@@ -10,10 +10,8 @@ import { PokemonList } from '../../components/PokemonList';
 import { Pokemon } from '../../models/pokemon';
 import { PokemonModal } from '../../components/PokemonDetailsModal';
 import { Loading } from '../../components/Loading';
-import { BackButton } from '../../components/BackButton';
 
 export const GenerationDetails = () => { 
-    const location = useLocation();
     const params: any = useParams();
     const [loading, setLoading] = useState(true);
     const [generationInfo, setGenerationInfo] = useState<Generation | null>(null);

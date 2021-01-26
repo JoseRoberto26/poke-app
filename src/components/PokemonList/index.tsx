@@ -12,7 +12,7 @@ export const PokemonList = ({list, onClick}: IPokemonList) => {
     return (
         <div className={style.list}>
             {list?.map((pokemon) => (
-                <PokemonListItem onClick={onClick} className={style.listItem} item={pokemon}/>
+                <PokemonListItem key={pokemon.id} onClick={onClick} className={style.listItem} item={pokemon}/>
             ) )}
         </div>
     )

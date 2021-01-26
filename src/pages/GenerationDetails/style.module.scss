@@ -12,6 +12,18 @@
     margin-bottom: 0;
     height: 570px;
 
+    &::-webkit-scrollbar {
+        width: 1.25rem;
+      }
+      &::-webkit-scrollbar-track {
+        background: #e5e5e6;
+        border-radius: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #f57f7fbe;
+        border-radius: 5px;
+      }
+
     section {
         width: 100%;
         display: flex;
@@ -54,6 +66,8 @@
     max-width: 392px;
     height: 196px;
     min-width: 196px;
+    border-radius: 8px;
+    border: 2px solid;
 
 }
 
