@@ -1,6 +1,6 @@
 .mainContainer { 
     max-width: 1000px;
-    margin: 9rem auto;
+    margin: 12rem auto;
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -10,7 +10,7 @@
     max-height: 679px;
     overflow-y: auto;
     margin-bottom: 0;
-    height: 675px;
+    height: 570px;
 
     section {
         width: 100%;
@@ -19,10 +19,6 @@
         flex-direction: column;
         align-items: center;
         margin: 1rem 0;
-    }
-
-    .pokedexSection { 
-        overflow: auto;
     }
 
     .gamesBox {
@@ -67,6 +63,13 @@
         margin-bottom: 0;
         height: 575px;
      }
+}
+
+@media screen and (max-width: 425px) { 
+    .mainContainer{ 
+        margin: 8.5rem auto;
+        height: 425px;
+    }
 }
 
 @media screen and (max-width: 800px) {

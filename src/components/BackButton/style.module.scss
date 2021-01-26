@@ -1,6 +1,19 @@
 .backButton{ 
+    position: absolute;
+    top: 27px;
+    left: 47%;
+    color: white;
+    border-radius: 50%;
+    background: #ea4f4b;
+    width: 83px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    cursor: pointer;
     h1 {
-        font-size: 66px;
+        font-size: 24px;
         transform: rotate(45deg);
     }
 }

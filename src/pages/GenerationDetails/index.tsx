@@ -1,6 +1,6 @@
 import { Generation } from '../../models/generation';
 import React, { useEffect, useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { capitalize } from '../../utils/formatters';
 import { fetchGenerationInfo } from '../../services/generationService';
 import style from  './style.module.scss';
@@ -13,7 +13,7 @@ import { Loading } from '../../components/Loading';
 import { BackButton } from '../../components/BackButton';
 
 export const GenerationDetails = () => { 
-    const history = useHistory();
+    const location = useLocation();
     const params: any = useParams();
     const [loading, setLoading] = useState(true);
     const [generationInfo, setGenerationInfo] = useState<Generation | null>(null);
@@ -48,6 +48,8 @@ export const GenerationDetails = () => {
 
         
         <div className={style.mainContainer}>
+            {location.pathname !== '/' && (<BackButton/>)}
+
              {loading && ( 
                 <Loading />
             )}
