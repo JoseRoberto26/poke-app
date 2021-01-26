@@ -4,14 +4,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 import { Home } from './pages/Home';
 import { GenerationDetails } from './pages/GenerationDetails';
-import Background from './assets/background-2.png';
-import { BackButton } from './components/BackButton';
+import Background from './assets/background-2.svg';
 
 function App() {
 
   return (
     <Router>
-		<main className={'foreground'}>
+		<main className={'app'}>
 			<img className={'backgroundImage'} src={Background}/>
 			<Switch>
 				<Route component={Home} exact path="/" />

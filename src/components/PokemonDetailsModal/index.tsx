@@ -7,6 +7,10 @@ import { capitalize, formatPokemonNumber } from '../../utils/formatters';
 import { AboutInfoCard } from './AboutInfoCard';
 import { PokeBallIcon } from '../PokeballIcon';
 
+
+Modal.setAppElement('#root')
+
+
 export interface IPokemonModalProps { 
     pokemon: Pokemon;
     closeModal: () => void;
