@@ -5,7 +5,7 @@
     justify-content: start;
     flex-direction: column;
     border-radius: 6px;
-    padding: 0 6rem;
+    padding: 0 8rem;
     padding-bottom: 2rem;
 
     section {
@@ -54,4 +54,26 @@
     max-width: 392px;
     height: 196px;
     min-width: 196px;
+
+}
+
+@media screen and (max-width: 800px) {
+     .mainContainer{ 
+        margin: 19% auto;
+     }
+     .infoTextBox{ 
+        flex-direction: column;
+        div{ 
+            margin: 1rem auto;
+        }
+     }
+
+     .gamesBox{ 
+        margin-top: 3rem;
+
+        .gameCoverImg { 
+            height: 123px;
+            min-width: 147px;
+        }
+    }
 }

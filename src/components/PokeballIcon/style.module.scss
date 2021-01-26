@@ -1,0 +1,10 @@
+.animated{ 
+    animation: spin 0.5s infinite linear;
+    opacity: 1;
+    max-width: 80px;
+}
+
+@keyframes spin { 
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

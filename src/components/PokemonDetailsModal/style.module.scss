@@ -1,7 +1,78 @@
+@media screen and (max-width: 720px){
+
+    .modalContainer{
+        flex-direction: column;
+    }
+    .imgsContainer{
+        flex-direction: row !important; 
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .infoContainer{
+        margin-top: 0 !important;
+        width: 100% !important;
+    }
+    
+    .sprite { 
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 720px){ 
+    .modalMenu{ 
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
 .modalContainer{ 
     display: flex;
 
+    .modalMenu{ 
+        background: #f33333;
+        padding: 1rem;
+        margin: -22px;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        label{ 
+            text-shadow: 2px 2px #000000;
+            color: white;
+            font-size: 18px;
+            margin-right: auto;
+            font-weight: bold;
+        }
+        .closeButton { 
+            margin-right: 3rem;
+            outline: none;
+            border: none;
+            background: transparent;
+            color: white;
+            font-family: 'PokemonGB';
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            .x{ 
+                background: white;
+                color: #f33333;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                padding: 0.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
     .imgsContainer{ 
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .sprite {
             width: 200px;
             margin: 2rem 0;
@@ -11,13 +82,14 @@
 
     .infoContainer{
         margin-top: 8rem;
+        width: 50%;
         .topInfoBox { 
             border: 2px solid black;
             padding: 1rem;
             border-radius: 8px;
             background-color: #f33333;
             color: white;
-            width: 207px;
+            max-width: 207px;
             display: flex;
             align-items: center;
 
@@ -56,7 +128,7 @@
             border: 1px solid black;
             background: white;
             border-radius: 8px;
-
+            max-width: 325px;
             .redLine{ 
                 width: 10px;
                 background: #f33333;
@@ -75,3 +147,6 @@
         }
     }
 }
+
+
+// @media screen and (max-width: )

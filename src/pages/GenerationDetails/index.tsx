@@ -9,6 +9,8 @@ import { TypeTag } from '../../components/TypeTag';
 import { PokemonList } from '../../components/PokemonList';
 import { Pokemon } from '../../models/pokemon';
 import { PokemonModal } from '../../components/PokemonDetailsModal';
+import { Loading } from '../../components/Loading';
+import { BackButton } from '../../components/BackButton';
 
 export const GenerationDetails = () => { 
     const history = useHistory();
@@ -43,7 +45,12 @@ export const GenerationDetails = () => {
     }
 
     return ( 
+
+        
         <div className={style.mainContainer}>
+             {loading && ( 
+                <Loading />
+            )}
             {selectedPokemon && ( 
                 <PokemonModal
                 closeModal={closeModal}
@@ -51,9 +58,9 @@ export const GenerationDetails = () => {
                 showModal={isModalOpen}
                 />
             )}
-            
             {generationInfo && generationInfo.version_groups.length > 0 && ( 
                 <section className={style.gameCoverSection}>
+                    {/* <BackButton/> */}
                     <div className={style.gamesBox}>
                         {generationInfo.version_groups.map((versionGroup) => (
                             <img className={style.gameCoverImg} key={versionGroup.name} src={require(`../../assets/imgs/${versionGroup.name}.jpg`).default}/>

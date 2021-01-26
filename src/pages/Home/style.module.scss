@@ -1,14 +1,13 @@
 .mainContainer { 
-    margin: 28% auto;
+    margin: 10% auto;
     margin-bottom: 0;
     display: flex;
     justify-content: start;
     flex-direction: column;
     border-radius: 6px;
     padding-bottom: 2rem;
-    padding: 2rem 10rem;
+    padding: 2rem 15rem;
     height: 100%;
-    overflow: scroll;
 
     @media screen and (max-width: 1170px){
         .section { 
@@ -18,7 +17,8 @@
     }
     @media screen and (max-width: 800px){ 
         padding: 1rem 4rem;
-
+        margin: 19% auto;
+        margin-bottom: 0;
         .textSection{ 
             h1 { 
                 font-size: 32px !important;

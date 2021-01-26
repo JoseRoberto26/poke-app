@@ -5,6 +5,7 @@ import { fetchGenerations } from '../../services/generationService';
 import { SmallCard } from '../../components/SmallCard';
 import { generationNameFormatter } from '../../utils/formatters';
 import { useHistory } from 'react-router-dom';
+import { Loading } from '../../components/Loading';
 
 
 export const Home = () => { 
@@ -44,6 +45,9 @@ export const Home = () => {
     return (
         <>
         <main className={style.mainContainer}>
+            {loading && ( 
+                <Loading />
+            )}
             <section className={style.textSection}>
                 <h1 className={animateText ? 'fade-in-animation' : undefined}>Welcome to PokeApp! </h1>
                 <h2 className={animateText ? 'fade-in-animation-with-delay' : undefined}>Select one of the pokemon universe generation below to know more about them!</h2>

@@ -7,14 +7,12 @@
     cursor: pointer;
     padding-right: 0;
     max-height: 75px;
-    
-
 }
 .iconBox{ 
     width: 20%;
     max-width: 95px;
     .icon{ 
-        max-width: 90px;
+        image-rendering: pixelated;
     }
 }
 .nameAndNumber{ 
@@ -32,4 +30,30 @@
     display: flex;
     justify-content: flex-end;
     width: 46%;
+}
+
+@media screen and (max-width: 720px){ 
+    .typesBox { 
+        display: none;
+    }
+    .iconBox{
+        width: 30%;
+    }
+    
+}
+
+@media screen and (max-width: 520px) { 
+
+    .iconBox, .nameAndNumber {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .nameAndNumber{ 
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
