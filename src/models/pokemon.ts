@@ -1,4 +1,4 @@
-import { PokemonType } from "./pokemonType";
+import { PokemonType, TypeWithSlot } from "./pokemonType";
 import { Sprites } from "./sprites";
 
 export interface Pokemon { 
@@ -7,5 +7,8 @@ export interface Pokemon {
     name: string;
     sprites: Sprites;
     is_legendary: boolean;
-    types: PokemonType[];
+    types: TypeWithSlot[];
+    height: number;
+    weight: number;
+    base_experience: number;
 }

@@ -1,9 +1,25 @@
 .list {
-    background-color: red;
     width: 100%;
     height: 100%;
     overflow-y: auto;
     border-radius: 8px;
-    background-color: #f9f9f9;
     overflow-x: hidden;
+
+    .listItem{ 
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+        border: 1px solid #efeded;
+        border-radius: 8px;
+        cursor: pointer;
+        padding-right: 0;
+        max-height: 75px;
+    }
+
+    .listItem:nth-child(odd) {
+        background-color: #dedede;
+    }
+    .listItem:nth-child(even){ 
+        background-color: #f9f9f9;
+    }
 }

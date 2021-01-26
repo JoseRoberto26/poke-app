@@ -7,9 +7,11 @@ import style from './style.module.scss';
 
 export interface IPokemonListItem { 
     item: Pokemon;
+    className?: string;
+    onClick: (selected: Pokemon | null) => void;
 }
 
-export const PokemonListItem = ({item}: IPokemonListItem) => { 
+export const PokemonListItem = ({item, className, onClick}: IPokemonListItem) => { 
     
     const [pokemon, setPokemon] = useState<Pokemon>();
 
@@ -24,7 +26,7 @@ export const PokemonListItem = ({item}: IPokemonListItem) => {
     }, [])
 
     return ( 
-        <div className={style.listItem}>
+        <div onClick={() => onClick(pokemon ?? null)} className={className ?? style.listItem}>
             <div className={style.iconBox}>
                 <img src={pokemon && pokemon.sprites.front_default} className={style.icon}/>
             </div>
@@ -34,7 +36,7 @@ export const PokemonListItem = ({item}: IPokemonListItem) => {
             </div>
             <div className={style.typesBox}>
                 {pokemon?.types.map((type) => ( 
-                    <TypeTag type={type.name}/>
+                    <TypeTag type={capitalize(type.type.name)}/>
                 ))}
             </div>
         </div>

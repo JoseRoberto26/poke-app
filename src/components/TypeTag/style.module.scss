@@ -1,10 +1,18 @@
 .tag { 
-    border: 1px solid #d8d7c9;
-    padding: 0.5rem;
     border-radius: 10px;
     min-width: 60px;
     display: flex;
     justify-content: center;
-    background-color: #d8d7c9;
     color: white;
+    margin: 0.5rem;
+    max-width: 129px;
+    border: 2px solid black;
+    padding: 0.5rem;
+
+    span{ 
+        font-weight: bold;
+        font-family: 'PokemonGB';
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+    }
 }

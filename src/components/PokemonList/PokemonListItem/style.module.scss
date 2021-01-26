@@ -1,6 +1,5 @@
 .listItem { 
     display: flex;
-    width: 100%;
     padding: 0.5rem;
     align-items: center;
     border: 1px solid #efeded;
@@ -8,20 +7,29 @@
     cursor: pointer;
     padding-right: 0;
     max-height: 75px;
-    .iconBox{ 
-        width: 20%;
-        .icon{ 
-            max-width: 90px;
-        }
-    }
-    .nameAndNumber{ 
-        width: 50%;
-        .nameText{ 
-            margin-left: 0.5rem;
-        }
-    }
-    .typesBox{ 
-        display: flex;
-    }
+    
 
+}
+.iconBox{ 
+    width: 20%;
+    max-width: 95px;
+    .icon{ 
+        max-width: 90px;
+    }
+}
+.nameAndNumber{ 
+    width: 50%;
+    span{ 
+        font-family: 'PokemonGB';
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .nameText{ 
+        margin-left: 0.5rem;
+    }
+}
+.typesBox{ 
+    display: flex;
+    justify-content: flex-end;
+    width: 46%;
 }

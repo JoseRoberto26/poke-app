@@ -1,0 +1,15 @@
+.infoCard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .labelText{ 
+        margin: 1rem 0;
+        font-size: 16px;
+    }
+    .labelInfo { 
+        font-size: 16px;
+    }
+
+}

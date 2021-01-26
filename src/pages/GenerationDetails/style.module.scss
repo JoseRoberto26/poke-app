@@ -19,11 +19,12 @@
 
     .pokedexSection { 
         overflow: auto;
+    }
 
-        label {
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
+    .gamesBox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
@@ -34,6 +35,11 @@
     width: 100%;
 }
 
+.sectionLabel{ 
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 
 .typesBox { 
     display: flex;
@@ -42,4 +48,10 @@
     .tag {
         flex: 1 0 0 21%;
     }
+}
+
+.gameCoverImg {
+    max-width: 392px;
+    height: 196px;
+    min-width: 196px;
 }
