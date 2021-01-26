@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
 		<main className={'foreground'}>
-			<img className={'backgroundImage'} src={Background}></img>
+			<img className={'backgroundImage'} src={Background}/>
 			<Switch>
 				<Route component={Home} exact path="/" />
 				<Route component={GenerationDetails} path="/generation/:id"/>

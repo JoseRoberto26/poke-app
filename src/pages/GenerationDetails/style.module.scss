@@ -1,12 +1,16 @@
 .mainContainer { 
     max-width: 1000px;
-    margin: 16rem auto;
+    margin: 9rem auto;
     display: flex;
     justify-content: start;
     flex-direction: column;
     border-radius: 6px;
     padding: 0 8rem;
     padding-bottom: 2rem;
+    max-height: 679px;
+    overflow-y: auto;
+    margin-bottom: 0;
+    height: 675px;
 
     section {
         width: 100%;
@@ -57,10 +61,16 @@
 
 }
 
-@media screen and (max-width: 800px) {
-     .mainContainer{ 
-        margin: 19% auto;
+@media screen and (max-width: 844px){ 
+    .mainContainer{ 
+        margin: 11rem auto;
+        margin-bottom: 0;
+        height: 575px;
      }
+}
+
+@media screen and (max-width: 800px) {
+     
      .infoTextBox{ 
         flex-direction: column;
         div{ 
