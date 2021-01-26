@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# PokeApp - A React application using Pokeapi free API 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application built with create-react-app to display Pokeapi info about the Pokemon universe generations info.
 
-## Available Scripts
+## About The Project
+![screenshot-1](https://i.imgur.com/EFQiH0t.png)
+![screenshot-2](https://i.imgur.com/9sneZCL.png)
+![screenshot-3](https://i.imgur.com/RECw6ay.png)
 
-In the project directory, you can run:
+This React application consists on a Home screen that gives the user the option choose his favorite Pokemon universe generation to check some information available through the PokeApi.
+After selecting one of the generations, the app redirects to a new page with information about the selected generation, including a list of every pokemon available in that generation. The user can also select a Pokemon to check more information about them, such as his height, weight and base stats value. 
 
-### `yarn start`
+### Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [React](https://reactjs.org/)
+* [Create React App](https://create-react-app.dev/)
+* [React Modal Component](https://www.npmjs.com/package/react-modal)
+* [Jest](https://jestjs.io/)
+* [Sass](https://sass-lang.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- GETTING STARTED -->
+## Getting Started
 
-### `yarn test`
+Instructions to set up the project locally. To get a local copy up and running follow these simple example steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `yarn build`
+First, you need to use either Yarn to install the project's dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo
+   ```sh
+   git clone https://github.com/JoseRoberto26/poke-app.git
+   ```
+2. Install Yarn packages
+   ```sh
+   yarn install
+   ```
+3. The project should be running at http://localhost:8000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- DEMO -->
+## Demo
 
-### `yarn eject`
+You can check a live version of the website at: 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- CONTRIBUTING -->
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- CONTACT -->
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Your Name - [@ZeDoBacho](https://twitter.com/ZeDoBacho) - jr.lsf26@gmail.com
+
+Project Link: [https://github.com/JoseRoberto26/poke-app](https://github.com/JoseRoberto26/poke-app)
