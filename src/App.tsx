@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 import { Home } from './pages/Home';
 import { GenerationDetails } from './pages/GenerationDetails';
-import Background from './assets/background-2.svg';
+import Background from './assets/background-2.png';
 
 function App() {
 
